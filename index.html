@@ -7,6 +7,8 @@
     <title>Monthly ledger</title>
     <!-- bootstrap css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- js link -->
+    
 </head>
 <body>
     <h1 class="text-center">Monthly ledger</h1>
@@ -17,9 +19,6 @@
                     <img src="images/loan-supervalue.png" alt="">
                 </div>
                 <div class="col-lg-5">
-                    
-
-                    
                     <div  style=" background-color: #F8F8F8; margin-left: 10rem; width: 580px; height: 815px; padding-top: 7rem;">
                         <!-- income section -->
                         <div>
@@ -27,7 +26,7 @@
                             <div class="d-flex justify-content-center pb-3">
                                 <!-- <label for="">Income: </label> -->
                                 <p class="pe-2">Income:</p>
-                                <input class="" type="text" name="" id="">
+                                <input class="" type="text" name="" id="total-income">
                             </div>
                         </div>
                         <!-- expenses section -->
@@ -35,49 +34,46 @@
                             <h3 class="text-center pb-3">Expenses</h3>
                             <div class="d-flex justify-content-center pb-3">
                                 <label class="pe-4" for="">Food: </label>
-                                <input type="text" name="" id="">
+                                <input type="text" name="" id="food-cost">
                             </div>
                             <div class="d-flex justify-content-center pb-3">
                                 <label class="pe-4" for="">Rent: </label>
-                                <input type="text" name="" id="">
+                                <input type="text" name="" id="rent-cost">
                             </div>
                             <div class="d-flex justify-content-center pb-3">
                                 <label class="pe-2" for="">Clothes: </label>
-                                <input type="text" name="" id="">
+                                <input type="text" name="" id="clothes-cost">
                             </div>
                             <div class="d-flex justify-content-center">
-                                <a class="text-white fw-bold p-2 text-center rounded-3" href="" style="text-decoration: none; background-color: #59A5FF">Calculator</a>
+                                
+                                <button class="text-white fw-bold p-2 text-center rounded-3" style="background-color: #59A5FF" id="btn-calculator">Calculate</button>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-center pb-3">Total Expenses: <span></span></h3>
-                            <h3 class="text-center pb-3">Balance: <span></span></h3>
+                            <h3 class="text-center pb-3">Total Expenses: <span id="total-expenses">0</span></h3>
+                            <h3 class="text-center pb-3">Balance: <span id="total-balance">0</span></h3>
                         </div>
 
                         <!-- saving section -->
                         <div class="d-flex justify-content-center pb-3">
                             <label class="pe-5"for="">Save: </label>
-                            <input type="text" id="">
+                            <input type="text" id="percentage">
                             <p class="ps-3 pe-3">%</p>
-                            <a class="text-white fw-bold p-2 text-center rounded-3" href="" style="text-decoration: none; background-color: #59A5FF;">Save</a>
+                            <button class="text-white fw-bold p-2 text-center rounded-3" style="background-color: #59A5FF" id="btn-saving">Save</button>
+                            
                         </div>
                         <div>
-                            <h3 class="text-center pb-3">Saving Amount: <span></span></h3>
-                            <h3 class="text-center">remaining Balance: <span> </span></h3>
+                            <h3 class="text-center pb-3">Saving Amount: <span id="saving-amount">0</span></h3>
+                            <h3 class="text-center">Remaining Balance: <span id="remain-balance">0</span></h3>
                         </div>
 
-
-    
                     </div>
                 </div>
-
-            
-        </div>
+            </div>
         </section>
     </main>
-    
-
     <!-- bootstrap script -->
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
