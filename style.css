@@ -1,3 +1,11 @@
-a{
-    text-decoration: none;
+.caluculation {
+  background-color: #f8f8f8;
+  margin-left: 10rem;
+  width: 580px;
+  height: 815px;
+  padding-top: 7rem;
+}
+
+.error_message{
+    display: none;
 }
